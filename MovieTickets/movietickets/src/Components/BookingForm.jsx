@@ -35,7 +35,7 @@ const BookingForm = () => {
   };
 
   useEffect(() => {
-    const ticketPrice = 150; // Ticket price for each seat
+    const ticketPrice = 150; 
     const totalBill = formData.selectedSeats.length * ticketPrice;
     setFormData(prevState => ({
       ...prevState,

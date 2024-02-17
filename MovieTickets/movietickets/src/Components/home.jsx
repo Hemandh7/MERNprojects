@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Grid, Text, Box, Image } from '@chakra-ui/react';
 
-// Data from movies.json
+
 import moviesData from '../Data/movies.json';
 
 const Home = () => {

@@ -17,7 +17,7 @@ const SeatingPlan = () => {
 
   const handleProceedToBooking = () => {
     if (selectedSeats.length > 0) {
-      navigate(`/booking?seats=${selectedSeats.join(',')}`); // Pass selected seats as query parameter
+      navigate(`/booking?seats=${selectedSeats.join(',')}`); 
     } else {
       alert('Please select at least one seat before proceeding to booking.');
     }
@@ -35,7 +35,7 @@ const SeatingPlan = () => {
             <Text>{row}</Text>
             {Array.from({ length: 8 }, (_, index) => {
               const seat = `${row}${index + 1}`;
-              const isBooked = false; // Replace with logic to check if seat is booked
+              const isBooked = false; 
               const isSelected = selectedSeats.includes(seat);
               return (
                 <Button
