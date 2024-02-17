@@ -1,0 +1,33 @@
+
+[
+    {
+      "id": 1,
+      "title": "Blade Runner 2049",
+      "poster": "https://rukminim2.flixcart.com/image/850/1000/jf8khow0/poster/a/u/h/small-hollywood-movie-poster-blade-runner-2049-ridley-scott-original-imaf3qvx88xenydd.jpeg?q=90&crop=false"
+    },
+    {
+      "id": 2,
+      "title": "Animal",
+      "poster": "https://m.media-amazon.com/images/I/91zTlD7AY1L.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Avangers Endgame",
+      "poster": "https://images-cdn.ubuy.co.in/634d0a48023cd2292277f3df-avengers-endgame-marvel-studios-framed.jpg"
+    },{
+        "id": 4,
+        "title": "Blade Runner 2049",
+        "poster": "https://rukminim2.flixcart.com/image/850/1000/jf8khow0/poster/a/u/h/small-hollywood-movie-poster-blade-runner-2049-ridley-scott-original-imaf3qvx88xenydd.jpeg?q=90&crop=false"
+      },
+      {
+        "id": 5,
+        "title": "Animal",
+        "poster": "https://m.media-amazon.com/images/I/91zTlD7AY1L.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Avangers Endgame",
+        "poster": "https://images-cdn.ubuy.co.in/634d0a48023cd2292277f3df-avengers-endgame-marvel-studios-framed.jpg"
+      }
+  ]
+  
