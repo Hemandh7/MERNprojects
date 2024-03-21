@@ -1,0 +1,171 @@
+/* LandingPage.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the entire landing page container */
+  .landing-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the top navigation */.banner {
+  background-image: url('https://i.pinimg.com/originals/bb/7a/00/bb7a00b1cdccd419d6bad81cc2707669.jpg'); /* Add your banner image URL here */
+  background-size: cover;
+  /* background: rgba(76, 175, 80, 0.5); */
+  color: #ffffff;
+  text-align: center;
+  padding: 250px 0px; /* Adjust as needed */
+  opacity: 0.6;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.banner .details-btn {
+  background-color: #53eb0d;
+  color: #333333;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the top navigation */
+.top-nav {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.top-nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.top-nav ul li {
+  margin: 0 10px;
+}
+
+.top-nav ul li a {
+  color: #04f77e; /* Green color for navbar elements */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* Style for the sign-in button */
+.sign-in-btn {
+  background-color: transparent;
+  color: #06ec79; /* Green color for sign-in button */
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Additional styling for sign-in button icon */
+.sign-in-btn::after {
+  content: "\f007"; /* Unicode for user icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+}
+  
+  /* Style for section boxes */
+  .section-box {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    /* border: 1px solid #cccccc; */
+    border-radius: 10px;
+  }
+  
+  /* Style for section titles */
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for section cards */
+  .section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .section-card {
+    flex: 0 1 calc(25% - 20px); /* Adjust card width */
+    margin-bottom: 20px;
+    /* border: 1px solid #cccccc; */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .section-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .section-card img:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-info {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style for designers section */
+  .designer-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .designer-profile {
+    flex: 0 1 calc(25% - 20px); /* Adjust profile width */
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .designer-profile img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit:cover;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .topsec{
+    text-align: left;
+    width:50%;
+    margin-left: 70px;
+  }
