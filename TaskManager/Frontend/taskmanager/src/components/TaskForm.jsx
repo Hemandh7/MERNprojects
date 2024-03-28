@@ -9,8 +9,8 @@ const TaskForm = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/tasks', { title, description });
-      window.location.reload(); // Reload the page after adding a task
+      await axios.post('https://taskmanager-9qtl.onrender.com/tasks', { title, description });
+      window.location.reload(); 
     } catch (error) {
       console.error('Error creating task:', error);
     }

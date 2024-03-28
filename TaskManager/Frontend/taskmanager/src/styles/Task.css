@@ -3,7 +3,7 @@
     border-radius: 0.25rem;
     padding: 1rem;
     margin-top: 1rem;
-    position: relative; /* Add position relative to position absolute child */
+    position: relative; 
   }
   
   .task-title {
@@ -26,7 +26,7 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 1rem;
-    margin-right: 0.5rem; /* Add margin between buttons */
+    margin-right: 0.5rem; 
   }
   .task-update-button{
     background-color: #0f2ef4;
@@ -47,12 +47,12 @@
     border-radius: 0.25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    width: 100%; /* Make the form cover the entire task */
+    width: 100%; 
   }
   
   .task-update-input,
   .task-update-textarea {
-    width: calc(100% - 2rem); /* Adjust width to fit inside the form */
+    width: calc(100% - 2rem); 
     margin-bottom: 1rem;
     padding: 0.5rem;
     border: 1px solid #ccc;
@@ -69,7 +69,7 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 1rem;
-    margin-right: 0.5rem; /* Add margin between buttons */
+    margin-right: 0.5rem; 
   }
   
   .task-update-submit-button:hover,

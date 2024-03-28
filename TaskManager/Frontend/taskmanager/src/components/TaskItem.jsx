@@ -9,8 +9,8 @@ const TaskItem = ({ task }) => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/tasks/${task._id}`);
-      window.location.reload(); // Reload the page after deletion
+      await axios.delete(`/tasks/${task._id}`);
+      window.location.reload(); 
     } catch (error) {
       console.error('Error deleting task:', error);
     }
@@ -18,11 +18,11 @@ const TaskItem = ({ task }) => {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`http://localhost:5000/tasks/${task._id}`, {
+      await axios.put(`/tasks/${task._id}`, {
         title: updatedTitle,
         description: updatedDescription
       });
-      window.location.reload(); // Reload the page after update
+      window.location.reload(); 
     } catch (error) {
       console.error('Error updating task:', error);
     }

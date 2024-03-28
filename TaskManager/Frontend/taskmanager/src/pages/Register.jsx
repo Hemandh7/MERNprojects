@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios'; // Import axios for making HTTP requests
+import axios from 'axios'; 
 import AuthForm from '../components/AuthForm';
 import '../styles/register.css';
 
@@ -10,9 +10,9 @@ const Register = () => {
 
   const handleRegister = async userData => {
     try {
-      const response = await axios.post('http://localhost:5000/auth/register', userData);
+      const response = await axios.post('https://taskmanager-9qtl.onrender.com/auth/register', userData);
       console.log('Registration response:', response.data);
-      // Redirect to login page after successful registration
+      
       navigate('/');
     } catch (error) {
       setError(error.response.data.message);

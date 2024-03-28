@@ -9,7 +9,7 @@ const TaskList = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/tasks');
+        const response = await axios.get('https://taskmanager-9qtl.onrender.com/tasks');
         setTasks(response.data);
       } catch (error) {
         console.error('Error fetching tasks:', error);
