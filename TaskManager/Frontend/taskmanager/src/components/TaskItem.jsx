@@ -1,31 +1,18 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-import '../styles/Task.css';
+import '../styles/Tasks.css';
 
-const TaskItem = ({ task }) => {
+const TaskItem = ({ task, onDelete, onUpdate }) => {
   const [isUpdating, setIsUpdating] = useState(false);
   const [updatedTitle, setUpdatedTitle] = useState(task.title);
   const [updatedDescription, setUpdatedDescription] = useState(task.description);
 
-  const handleDelete = async () => {
-    try {
-      await axios.delete(`/tasks/${task._id}`);
-      window.location.reload(); 
-    } catch (error) {
-      console.error('Error deleting task:', error);
-    }
+  const handleDelete = () => {
+    onDelete(task._id);
   };
 
-  const handleUpdate = async () => {
-    try {
-      await axios.put(`/tasks/${task._id}`, {
-        title: updatedTitle,
-        description: updatedDescription
-      });
-      window.location.reload(); 
-    } catch (error) {
-      console.error('Error updating task:', error);
-    }
+  const handleUpdate = () => {
+    onUpdate(task._id, { title: updatedTitle, description: updatedDescription });
+    setIsUpdating(false);
   };
 
   return (
