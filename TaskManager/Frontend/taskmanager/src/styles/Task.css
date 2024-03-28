@@ -1,0 +1,79 @@
+.task {
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    position: relative; /* Add position relative to position absolute child */
+  }
+  
+  .task-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+  }
+  
+  .task-description {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  
+  .task-update-button,
+  .task-delete-button {
+    background-color: #ed1708;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem; /* Add margin between buttons */
+  }
+  .task-update-button{
+    background-color: #0f2ef4;
+  }
+  
+  .task-update-button:hover,
+  .task-delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .task-update-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 100%; /* Make the form cover the entire task */
+  }
+  
+  .task-update-input,
+  .task-update-textarea {
+    width: calc(100% - 2rem); /* Adjust width to fit inside the form */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .task-update-submit-button,
+  .task-update-cancel-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem; /* Add margin between buttons */
+  }
+  
+  .task-update-submit-button:hover,
+  .task-update-cancel-button:hover {
+    background-color: #45a049;
+  }
+  
